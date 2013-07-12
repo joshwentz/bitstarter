@@ -4,7 +4,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 var buf = new Buffer(256);
-var index = fs.readFileSync(index.html);
+var index = fs.readFileSync('index.html', 'utf8');
 var buffer = buf.toString('utf8', 0, buffer.length);
 
 app.get('/', function(request, response) {
