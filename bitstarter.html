@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="utf-8">
-        <title>MY First Bitstarter</title>
+        <title>E+WEB</title>
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -84,15 +84,14 @@
                 padding: 2.5% 0%;
             }
             .footer {
-                color: gray;
+                color: #cccccc;
                 text-align: center;
             }
             .footer p {
                 font-size: 11px;
             }
             .footer a {
-                color: rgb(107, 142, 35);
-                ;
+                color: #ccccff;
             }
         </style>
     </head>
@@ -112,14 +111,14 @@
                     <a class="brand" href="#">E+WEB</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li>
-                                <a href="#about">about</a>
+                            <li class="active">
+                                <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#contact">contact</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="#FAQ">faq</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -139,17 +138,16 @@
             <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
             <div class="row-fluid heading">
                 <div class="span12">
-                    <h1>E+WEB</h1>
+                    <h1>Product</h1>
                 </div>
             </div>
             <div class="row-fluid subheading">
                 <div class="span12">
                     <!-- Special typography from Bootstrap for lead paragraph. -->
                     <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-                    <p class="lead">Run EnergyPlus building energy simulations online.</p>
+                    <p class="lead">One sentence description.</p>
                 </div>
             </div>
-            
             <div class="row-fluid pitch">
                 <div class="span5 offset1 video">
                     <img class="img-polaroid" src="http://placehold.it/480x300">
@@ -204,66 +202,46 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row-fluid section2">
-                <div class="span5 offset1 copy copy-right">
-                    <p>E+WEB is a building energy simulation web application, built on top of
-                        the U.S. Department of Energy's <a href="http://apps1.eere.energy.gov/buildings/energyplus/energyplus_about.cfm">EnergyPlus</a> engine. EnergyPlus is a stand-alone
-                        simulation program without a 'user friendly' graphical interface. It reads
-                        input and writes output as text files. Inputs include an Input Data File
-                        (IDF) and EnergyPlus Weather file (EPW). E+WEB puts the command line experience
-                        on the web, simplifies it for new users, and uses the new HTML5 technology
-                        WebSockets to show terminal output as progress.</p>
-                </div>
-                <div class="span5 asset">
-                    <img class="img-polaroid" src="http://placehold.it/480x300">
-                </div>
-            </div>
-            <hr/>
-            <div class="row-fluid subheading">
-                <div class="span12">
-                    <p class="lead">Command Line is hard;</p>
-                    <code>cd EnergyPlus-7-1-0/bin/</code>
-                    <code>./energyplus ../Examples/in.idf ../WeatherData/USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw</code>
-                    <p class="lead">a <a href="http://energyplus.buildsci.us">Web App</a> is easy.</p>
-                </div>
-            </div>
-            <hr/>
-            <div id="about" class="row-fluid section1">
-                <div class="span10 offset1">
-                    <h3>ABOUT</h3>
-                </div>
+            <!-- Beyond this part the marketing copy begins. -->
+            <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+            <!-- http://placehold.it -->
+            <div class="row-fluid section1">
                 <div class="span5 offset1 asset">
-                    <img class="img-polaroid" src="http://placehold.it/480x300">
+                    <img class="img-poloaroid" src="http://placehold.it/480x300">
                 </div>
                 <div class="span5 copy">
-                    <p>The engine, <a href="http://apps1.eere.energy.gov/buildings/energyplus/energyplus_about.cfm">EnergyPlus</a>, is an energy analysis and thermal load simulation
-                        program. Based on a user's description of a building from the perspective
-                        of the building's physical make-up and associated mechanical and other
-                        systems, EnergyPlus calculates heating and cooling loads necessary to maintain
-                        thermal control setpoints, conditions throughout a secondary HVAC system
-                        and coil loads, and the energy consumption of primary plant equipment.
-                        Simultaneous integration of these—and many other—details verify that the
-                        EnergyPlus simulation performs as would the real building.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta,
+                        dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit
+                        at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque
+                        lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis
+                        scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+                        quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices
+                        adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo
+                        velit at nunc. Fusce nec egestas sem. Donec fringilla.</p>
                 </div>
             </div>
-            <div id="contact" class="row-fluid section2 text-right">
-                <div class="span10 offset1">
-                    <h3>CONTACT</h3>
-                </div>
+            <div class="row-fluid section2">
                 <div class="span5 offset1 copy copy-right">
-                    <p>My name is Josh Wentz.</p>
-                    <p>I'm a software engineer at U.S. DOE Energy Efficient Buildings HUB in Phildelphia, PA.</p>
-                    <p>Coursera is crazy cool.  Never before would I have been introduced to the best 2013 tools in Sillicon Valley by some of the best professors at Stanford.  I'm ecstatic to be a part of the inaugural <a href="http://coursera.org/course/startup">Startup Engineering</a> class.</p>
-                    <p>Special thanks to the professors, Balaji S. Srinivasan & Vijay S. Pande, for making this class and project possible.                        
-                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta,
+                        dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit
+                        at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque
+                        lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis
+                        scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+                        quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices
+                        adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo
+                        velit at nunc. Fusce nec egestas sem. Donec fringilla.</p>
                 </div>
                 <div class="span5 asset">
                     <img class="img-polaroid" src="http://placehold.it/480x300">
                 </div>
             </div>
-            <!-- FAQ. -->
-            <div id="FAQ" class="row-fluid faq">
+            <!-- For the FAQ, we introduct a little bit of JS, using accordion. -->
+            <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+            <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+            <div class="row-fluid faq">
                 <div class="span10 offset1">
                     <h3>FAQ</h3>
                     <div class="accordion" id="accordion2">
@@ -271,22 +249,22 @@
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
                                 href="#collapseOne">
-										Q: What is EnergyPlus?
+										What does FAQ stand for?
 									</a>
                             </div>
                             <div id="collapseOne" class="accordion-body collapse">
-                                <div class="accordion-inner">A: an energy analysis and thermal load simulation program</div>
+                                <div class="accordion-inner">Frequently Asked Question.</div>
                             </div>
                         </div>
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
                                 href="#collapseTwo">
-										Q:  Who built the EnergyPlus engine?
+										What's a Frequently Asked Question?
 									</a>
                             </div>
                             <div id="collapseTwo" class="accordion-body collapse">
-                                <div class="accordion-inner">A: Software development is lead by Lawrence Berkeley National Lab (LBNL).  Engine logic is a collaboration amongst hundreds of engineers over 4 decades.</div>
+                                <div class="accordion-inner">A question which is commonly asked by users.</div>
                             </div>
                         </div>
                     </div>
@@ -294,15 +272,11 @@
             </div>
             <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
             <!-- http://creativecommons.org/licenses/ -->
-            <hr/>
             <div class="row-fluid footer">
                 <div class="span12">
-                    <p>Designed & Developed by
-                        <a href="http://www.joshwentz.net">Josh Wentz</a> in Summer 2013 for
-                        <a href="http://coursera.org/course/startup">Startup Engineering.  </a>
-                        <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0 License.</a>
-                    </p>
-                    
+                    <p>This work is licensed under the
+                        <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the
+                        page.</p>
                 </div>
             </div>
         </div>
